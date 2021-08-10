@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da8bf491-69f3-4961-b9f8-c5d41ed069b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
