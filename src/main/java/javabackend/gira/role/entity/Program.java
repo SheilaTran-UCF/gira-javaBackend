@@ -8,6 +8,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import javabackend.gira.common.entity.BaseEntity;
+import javabackend.gira.role.util.HttpMethods;
 
 
 
@@ -15,7 +16,7 @@ import javabackend.gira.common.entity.BaseEntity;
 @Table(name = "gira_program")
 public class Program extends BaseEntity {
 	private String name;
-	//private HttpMethods	method; // safe type
+	private HttpMethods	method; // safe type
 	private String path;
 	
 	@ManyToMany(mappedBy = "programs")
