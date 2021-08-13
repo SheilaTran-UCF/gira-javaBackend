@@ -12,7 +12,7 @@ import javabackend.gira.role.util.HttpMethods;
 
 
 
-@Entity
+/*@Entity
 @Table(name = "gira_program")
 public class Program extends BaseEntity {
 	private String name;
@@ -22,3 +22,4 @@ public class Program extends BaseEntity {
 	@ManyToMany(mappedBy = "programs")
 	private Set<Role> roles = new HashSet<>();
 }
+*/
