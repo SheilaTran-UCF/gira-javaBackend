@@ -14,7 +14,7 @@ import javax.persistence.Table;
 import javabackend.gira.common.entity.BaseEntity;
 
 
-@Entity
+/*@Entity
 @Table(name = "gira_group")
 public class Group extends BaseEntity {
 	private String name;
@@ -26,3 +26,4 @@ public class Group extends BaseEntity {
 	inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private Set<Role> roles = new HashSet<>();
 }
+*/
