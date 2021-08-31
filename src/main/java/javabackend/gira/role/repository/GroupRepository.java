@@ -1,11 +1,13 @@
 package javabackend.gira.role.repository;
 
-import java.security.acl.Group;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-//@Repository
-//public interface GroupRepository extends JpaRepository<Group, Long> {
+import javabackend.gira.role.entity.Group;
 
-//}
+@Repository
+public interface GroupRepository extends JpaRepository<Group, Long> {
+
+}

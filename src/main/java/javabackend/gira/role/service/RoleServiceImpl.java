@@ -4,8 +4,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import javabackend.gira.role.dto.AddProgramDto;
 import javabackend.gira.role.dto.CreateRoleDto;
+import javabackend.gira.role.dto.RoleDto;
+import javabackend.gira.role.entity.Program;
 import javabackend.gira.role.entity.Role;
+import javabackend.gira.role.repository.ProgramRepository;
 import javabackend.gira.role.repository.RoleRepository;
 import javabackend.gira.role.service.itf.RoleService;
 
@@ -13,15 +17,18 @@ import javabackend.gira.role.service.itf.RoleService;
 @Service
 public class RoleServiceImpl implements RoleService{
 
-private RoleRepository repository;
+	private RoleRepository repository;
+	private ProgramRepository programRepository;
 	
-	public RoleServiceImpl(RoleRepository roleRepository) {
+	public RoleServiceImpl(RoleRepository roleRepository,
+			ProgramRepository programRepository) {
 		repository = roleRepository;
+		this.programRepository = programRepository;
 	}
 	
 	@Override
-	public List<Role> findAll() {
-		return repository.findAll();
+	public List<RoleDto> findAll() {
+		return repository.findAllDto();
 	}
 
 	@Override
@@ -34,5 +41,14 @@ private RoleRepository repository;
 		return repository.save(newRole);
 	}
 
-}
+	@Override
+	public Role addProgram(AddProgramDto dto) {
+		Role role = repository.getById(dto.getRoleId()); 
+		Program program = programRepository.getById(dto.getProgramId());
+		
+		role.addProgram(program);
+		
+		return repository.save(role);
+	}
 
+}

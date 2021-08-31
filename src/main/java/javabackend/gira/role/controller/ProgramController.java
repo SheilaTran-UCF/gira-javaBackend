@@ -1,6 +1,4 @@
-package javabackend.gira.program.controller;
-
-
+package javabackend.gira.role.controller;
 
 import java.util.List;
 
@@ -15,31 +13,38 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javabackend.gira.common.ResponseHandler;
-import javabackend.gira.program.dto.CreateProgramDto;
-import javabackend.gira.program.entity.Program;
-import javabackend.gira.program.service.itf.ProgramService;
+import javabackend.gira.role.dto.CreateProgramDto;
+import javabackend.gira.role.service.itf.ProgramService;
+import javabackend.gira.role.dto.ProgramDto;
+import javabackend.gira.role.entity.Program;
+
 
 @RestController
-@RequestMapping("/api/program")
+@RequestMapping("api/program")
 public class ProgramController {
-
-	private ProgramService service;
-
+private ProgramService service;
+	
+	// constructor inject
 	public ProgramController(ProgramService programService) {
 		service = programService;
 	}
-
+	
 	@GetMapping
-	public Object findAllProgram() {
-		List<Program> programs = service.findAll();
+	public Object findAllPrograms() {
+		List<ProgramDto> programs = service.findAll();
+		
 		return ResponseHandler.getResponse(programs, HttpStatus.OK);
 	}
-
+	
 	@PostMapping
-	public Object SaveProgram(@Valid @RequestBody CreateProgramDto dto, BindingResult errors) {
-		if (errors.hasErrors())
-			return ResponseHandler.getResponse(errors, HttpStatus.BAD_REQUEST);
-		Program addedProgram = service.addNewProgram(dto);
-		return ResponseHandler.getResponse(addedProgram, HttpStatus.CREATED);
+	public Object saveProgram(@Valid @RequestBody CreateProgramDto dto
+			, BindingResult errors ) {
+		if(errors.hasErrors())
+			return ResponseHandler.getResponse(HttpStatus.BAD_REQUEST);
+		
+		Program newProgram = service.saveProgram(dto);
+		
+		return ResponseHandler.getResponse(newProgram, HttpStatus.CREATED);
 	}
+
 }
