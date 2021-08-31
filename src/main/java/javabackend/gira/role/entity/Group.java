@@ -10,13 +10,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import javabackend.gira.common.entity.BaseEntity;
 
-
-/*@Entity
+@Entity
 @Table(name = "gira_group")
 public class Group extends BaseEntity {
+	@NotNull
+	@Size(min = 3, max = 50, message = "{group.name.size}")
 	private String name;
 	private String description;
 	
@@ -26,4 +29,3 @@ public class Group extends BaseEntity {
 	inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private Set<Role> roles = new HashSet<>();
 }
-*/
