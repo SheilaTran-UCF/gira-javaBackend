@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Version;
@@ -11,7 +12,7 @@ import javax.persistence.Version;
 @MappedSuperclass
 public class BaseEntity {
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY )
 	@Column(updatable = false)
 	protected Long id;
 	
@@ -21,7 +22,10 @@ public class BaseEntity {
 	protected String createdBy;
 	protected LocalDateTime createdAt;
 	protected String updatedBy;
-	protected LocalDateTime updatedt;
+	protected LocalDateTime updatedAt;
+	
+	
+	/* getters/setters */
 	public Long getId() {
 		return id;
 	}
@@ -52,15 +56,10 @@ public class BaseEntity {
 	public void setUpdatedBy(String updatedBy) {
 		this.updatedBy = updatedBy;
 	}
-	public LocalDateTime getUpdatedt() {
-		return updatedt;
+	public LocalDateTime getUpdatedAt() {
+		return updatedAt;
 	}
-	public void setUpdatedt(LocalDateTime updatedt) {
-		this.updatedt = updatedt;
+	public void setUpdatedAt(LocalDateTime updatedAt) {
+		this.updatedAt = updatedAt;
 	}
-	
-
-	/* getters/setters */
-	
 }
-	

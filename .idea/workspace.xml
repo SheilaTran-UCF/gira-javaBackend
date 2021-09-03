@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da8bf491-69f3-4961-b9f8-c5d41ed069b7" name="Changes" comment="" />
+    <list default="true" id="da8bf491-69f3-4961-b9f8-c5d41ed069b7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/common/ResponseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/common/ResponseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/common/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/common/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/group/controller/GroupController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/group/dto/CreateGroupDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/group/entity/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/group/responsitory/GroupRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/group/service/GroupServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/group/service/itf/GroupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/program/controller/ProgramController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/program/dto/CreateProgramDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/program/entity/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/program/responsitory/ProgramRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/program/service/ProgramServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/program/service/itf/ProgramService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/dto/CreateRoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/dto/CreateRoleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/repository/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/repository/GroupRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/repository/ProgramRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/repository/ProgramRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/service/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/service/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/service/itf/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabackend/gira/role/service/itf/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/validation/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/validation/messages.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
