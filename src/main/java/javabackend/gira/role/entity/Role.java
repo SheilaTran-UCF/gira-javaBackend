@@ -17,9 +17,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import javabackend.gira.common.entity.BaseEntity;
-//import javabackend.gira.group.entity.Group;
+
 import springfox.documentation.builders.RequestHandlerSelectors;
-//import javabackend.gira.program.entity.Program;
+
 
 
 @Entity

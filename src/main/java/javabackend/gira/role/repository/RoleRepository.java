@@ -13,10 +13,9 @@ import javabackend.gira.role.entity.Role;
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Long>{
 	
-	
 	@Transactional(readOnly = true)
-//	@Query("SELECT r.name as name, r.id as id, r.description as description FROM Role r")
 	@Query("SELECT r FROM Role r")
 	List<RoleDto> findAllDto();
 
+	int countByName(String roleName);
 }

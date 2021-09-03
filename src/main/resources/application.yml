@@ -8,3 +8,8 @@ spring:
     generate-ddl: true
     hibernate:
       ddl-auto: update
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+      
+  

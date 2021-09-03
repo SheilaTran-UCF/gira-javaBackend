@@ -1,5 +1,4 @@
 package javabackend.gira.role.service;
-
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -10,8 +9,8 @@ import javabackend.gira.role.entity.Program;
 import javabackend.gira.role.repository.ProgramRepository;
 import javabackend.gira.role.service.itf.ProgramService;
 
-public class ProgramServiceImpl implements ProgramService {
-
+@Service
+public class ProgramServiceImpl implements ProgramService{
 private ProgramRepository repository;
 	
 	public ProgramServiceImpl(ProgramRepository programRepository) {
@@ -32,6 +31,12 @@ private ProgramRepository repository;
 		program.setPath(dto.getPath());
 		
 		return repository.save(program);
+	}
+
+	@Override
+	public boolean isExistedId(Long programId) {
+		// TODO Auto-generated method stub
+		return repository.existsById(programId);
 	}
 	
 }

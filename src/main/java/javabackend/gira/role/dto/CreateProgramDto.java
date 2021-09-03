@@ -7,7 +7,6 @@ import javax.validation.constraints.Size;
 import javabackend.gira.role.util.HttpMethods;
 
 public class CreateProgramDto {
-
 	@NotBlank(message = "{role.name.not-blank}")
 	@Size(min = 3, max = 50, message = "{role.name.size}")
 	private String name;

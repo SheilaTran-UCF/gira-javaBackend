@@ -7,8 +7,8 @@ import java.util.Map;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-
 import javabackend.gira.common.util.ErrorUtils;
+
 
 public class ResponseHandler {
 	public static ResponseEntity<Object> getResponse(Object content, HttpStatus status){

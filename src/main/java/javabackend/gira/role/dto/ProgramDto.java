@@ -8,4 +8,5 @@ public interface ProgramDto {
 		public String getName();
 		public HttpMethods getMethod();
 		public String getPath();
-}
+		
+	}

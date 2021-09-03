@@ -1,5 +1,6 @@
 package javabackend.gira.role.entity;
 
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,6 +20,10 @@ import javabackend.gira.role.util.HttpMethods;
 @Entity
 public class Program extends BaseEntity{
 
+
+@Entity
+@Table(name = "gira_program")
+public class Program extends BaseEntity {
 	@NotNull
 	@Column(unique = true)
 	@Size(min = 3, max = 50, message = "{program.name.size}")
