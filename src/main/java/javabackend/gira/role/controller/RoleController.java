@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -27,12 +26,9 @@ import javabackend.gira.role.dto.UpdateRoleDto;
 import javabackend.gira.role.entity.Role;
 import javabackend.gira.role.service.itf.RoleService;
 
-
-
-@RestController
-@RequestMapping("/api/role")
 public class RoleController {
-	private RoleService service;
+
+private RoleService service;
 	
 	public RoleController(RoleService roleService) {
 		service = roleService;
@@ -93,4 +89,14 @@ public class RoleController {
 		return ResponseHandler.getResponse(HttpStatus.OK);
 	}
 	
+	@PostMapping("/add-program")
+	public Object addProgram(@Valid @RequestBody AddProgramDto dto,
+			BindingResult errors) {
+		if(errors.hasErrors())
+			return ResponseHandler.getResponse(errors, HttpStatus.BAD_REQUEST);
+		
+		Role updatedRole = service.addProgram(dto);
+		
+		return ResponseHandler.getResponse(updatedRole, HttpStatus.OK);
+	}
 }

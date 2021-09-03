@@ -17,6 +17,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javabackend.gira.common.entity.BaseEntity;
 import javabackend.gira.role.util.HttpMethods;
 
+@Entity
+public class Program extends BaseEntity{
 
 
 @Entity

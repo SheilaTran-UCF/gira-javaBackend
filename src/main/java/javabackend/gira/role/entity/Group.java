@@ -13,7 +13,6 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-
 import javabackend.gira.common.entity.BaseEntity;
 import javabackend.gira.user.entity.User;
 

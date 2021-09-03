@@ -1,6 +1,5 @@
 package javabackend.gira.role.controller;
 
-
 import java.util.List;
 
 import javax.validation.Valid;
